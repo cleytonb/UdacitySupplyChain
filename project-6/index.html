@@ -16,6 +16,28 @@
         <p style="text-align: center;">Prove the authenticity of coffee using the Ethereum blockchain.</p>
     </div>
 
+    <div id="ftc-account">
+        <h2>Accounts</h2>
+        <div class="form-group">
+            Connected Account
+            <br>
+            <input class="input-field" id="account" disabled value=""><br>
+            Account role
+            <br>
+            <input class="input-field" id="accountRole" disabled value=""><br>
+            <hr>
+            Register Account Address
+            <br>
+            <input class="input-field" id="newAccount" value=""><br>
+            <div class=button-div>
+                <button class="btn-fetchOne" id="button" type="button" data-id="11">Farmer</button>
+                <button class="btn-fetchTwo" id="button" type="button" data-id="12">Distributor</button>
+                <button class="btn-fetchTwo" id="button" type="button" data-id="13">Retailer</button>
+                <button class="btn-fetchTwo" id="button" type="button" data-id="14">Consumer</button>
+            </div>
+        </div>
+    </div>
+
     <div id="ftc-harvest">
         <h2>Product Overview</h2>
         <div class="form-group">
@@ -38,7 +60,7 @@
         <div class="form-group">
             Farmer ID
             <br>
-            <input type="text" id="originFarmerID" name="originFarmerID" value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f"
+            <input type="text" id="originFarmerID" name="originFarmerID" value="0x69d7fDD78818BE0509187Dd2EdbBA9Ee4195f099"
                 size="50"><br>
             Farm Name
             <br>
@@ -84,12 +106,79 @@
             <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
             <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
             <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
+            <button class="btn-receive" id="button" type="button" data-id="15">Retail Sell</button>
             <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
         </div>
         <div class=form-break></div>
         <hr>
     </div>
-
+    <h2>Item Fetch Result</h2>
+    <div class="form-group">
+        SKU
+        <br>
+        <input class="input-field" id="ftc-item-sku" disabled value=""><br>
+        
+        UPC
+        <br>
+        <input class="input-field" id="ftc-item-upc" disabled value=""><br>
+        
+        State
+        <br>
+        <input class="input-field" id="ftc-item-state" disabled value=""><br>
+        
+        Owner
+        <br>
+        <input class="input-field" id="ftc-item-owner" disabled value=""><br>
+                
+        Origin Farm Id
+        <br>
+        <input class="input-field" id="ftc-item-farm-id" disabled value=""><br>
+        
+        Origin Farm Name
+        <br>
+        <input class="input-field" id="ftc-item-farm-name" disabled value=""><br>
+        
+        Origin Farm Information
+        <br>
+        <input class="input-field" id="ftc-item-farm-info" disabled value=""><br>
+        
+        Origin Farm Latitude
+        <br>
+        <input class="input-field" id="ftc-item-farm-lat" disabled value=""><br>
+        
+        Origin Farm Longitude
+        <br>
+        <input class="input-field" id="ftc-item-farm-lng" disabled value=""><br>
+        
+        Product Id
+        <br>
+        <input class="input-field" id="ftc-item-product-id" disabled value=""><br>
+        
+        Product Notes
+        <br>
+        <input class="input-field" id="ftc-item-product-notes" disabled value=""><br>
+        
+        Product Price
+        <br>
+        <input class="input-field" id="ftc-item-product-price" disabled value=""><br>
+        
+        Retail Product Price
+        <br>
+        <input class="input-field" id="ftc-item-retail-price" disabled value=""><br>
+        
+        Distributor Id
+        <br>
+        <input class="input-field" id="ftc-item-distributor-id" disabled value=""><br>
+        
+        Retailer Id
+        <br>
+        <input class="input-field" id="ftc-item-retailer-id" disabled value=""><br>
+        
+        Consumer Id
+        <br>
+        <input class="input-field" id="ftc-item-consumer-id" disabled value=""><br>
+        
+    </div>
     <h2>Transaction History<span id="ftc-history"></span></h2>
     <div>
         <ul id="ftc-events">
@@ -100,7 +189,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/web3.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
 </body>
