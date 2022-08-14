@@ -277,7 +277,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
 
   // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
   // Use the above modifiers to check if the item is received
-  function purchaseItem(uint _upc) public onlyConsumer forRetailSale(_upc) paidEnough(items[_upc].retailProductPrice) checkValue(items[_upc].retailProductPrice)
+  function purchaseItem(uint _upc) public payable onlyConsumer forRetailSale(_upc) paidEnough(items[_upc].retailProductPrice) checkValue(items[_upc].retailProductPrice)
   {
     require(_upc > 0, "Invalid UPC");
 
@@ -289,7 +289,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
     // Emit the appropriate event
     emit Purchased(_upc);
 
-    // Transfer money to farmer
+    // Transfer money to retailer
     items[_upc].retailerID.transfer(items[_upc].retailProductPrice);
   }
 
