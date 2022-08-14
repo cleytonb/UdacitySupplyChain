@@ -1,6 +1,7 @@
 # Ethereum Dapp for Tracking Items through Supply Chain
 
 Rinkeby Contract Address: 0x0b78158561dc450039469C2142A1AE7b70E9326F
+
 Rinkeby Transaction ID: 0xfdd8fcd8dbf978e11e3caae64c15e957f9d6fe7cc6451d3954e76d6006a75116
 
 Program version numbers:
@@ -61,7 +62,7 @@ ganache-cli -m "spirit supply whale amount human item harsh scare congress disco
 
 Your terminal should look something like this:
 
-![Ganache Cli Output](./images/ganacheCliOutput.png)
+![Ganache Cli Output](./images/GanacheCliOutput.png)
 
 In a separate terminal window, Compile smart contracts:
 
@@ -112,7 +113,3 @@ npm run dev
 ![State Diagram](./umls/StateDiagram.png)
 
 ![Data Diagram](./umls/DataDiagram.png)
-
-## 
-
-Contract Address: 0x0b78158561dc450039469C2142A1AE7b70E9326F
